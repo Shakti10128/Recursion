@@ -19,6 +19,8 @@ void mergeArray(vector<int> left,int size1,vector<int> right,int size2,vector<in
     }
 }
 
+
+// merge Sort algorithm
 void mergeSort(vector<int> &arr,int size){
     if(size<=1){
         return;
