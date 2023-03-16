@@ -41,7 +41,6 @@ void mergeSort(vector<int> &arr,int size){
 int main(){
     vector<int> arr = {4,7,1,5,3,6,9,0,1};
     int size = arr.size();
-    // cout<<arr.size()<<endl;
     mergeSort(arr,size);
     for(auto it: arr){
         cout<<it<<" ";
