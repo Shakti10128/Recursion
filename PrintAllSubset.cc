@@ -1,13 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void PrintAllSubset(vector<int>arr,int size,int i,vector<int> ans){
+void PrintAllSubset(vector<int>arr,int size,int i,vector<vector<int>>&ans,vector<int> temp){
     // base case
     if(i == size){
-        for(auto val:ans){
-            cout<<val<<" ";
-        }
-        cout<<endl;
+        ans.push_back(temp)
         return;
     }
     // exclude
@@ -18,8 +15,9 @@ void PrintAllSubset(vector<int>arr,int size,int i,vector<int> ans){
 }
 int main(){
     vector<int> arr = {1,2,3};
-    vector<int> ans;
+    vector<vector<int>>ans;
+    vector<int> temp;
     int size = arr.size();
     int i = 0;
-    PrintAllSubset(arr,size,i,ans);
+    PrintAllSubset(arr,size,i,ans,temp);
 }
