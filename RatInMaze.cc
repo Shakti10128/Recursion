@@ -51,7 +51,7 @@ vector<string> searchMaze(vector<vector<int>> & arr, int n){
 }
 int main(){
     vector<vector<int>> arr={{1,0,0,0},{1,1,0,0},{1,1,0,0},{0,1,1,1}};
-    int n = 4;
+    int n = arr.size();
     vector<string> ans = searchMaze(arr,n);
     for(auto it: ans){
         cout<<it<<endl;
